@@ -1,9 +1,7 @@
 {
     "title": "Zoom's random stuff",
-    "type": "tool",
-    "tags": [
-        "comic",
-        "fun"
-    ],
-    "ignore": []
+    "type": "ServerContent",
+    "ignore": [
+        "*.md"
+    ]
 }
