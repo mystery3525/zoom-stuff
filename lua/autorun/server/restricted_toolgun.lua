@@ -1,6 +1,6 @@
 hook.Add("CanTool", "ZoomToolgunHook", function ( ply, tr, toolname, tool, button )
-    if toolname != "unbreakable" then
-        return -- ignore all other tools
+    if toolname == "remover" then
+        return -- allow only the remover tool
     end
 
     if not IsValid(tr.Entity) then
