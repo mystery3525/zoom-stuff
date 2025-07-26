@@ -29,7 +29,7 @@ hook.Add( "EntityTakeDamage", "NoRPGAgainstInfantry", function( target, dmginfo 
     end
     
     local set_dmg = dmginfo:GetDamage()
-    if target:IsPlayer() or target:IsNPC() then
+    if target:IsPlayer() then
         set_dmg = math.Clamp( set_dmg, 0, 10 ) -- hard-cap to 10 damage
     end
 
